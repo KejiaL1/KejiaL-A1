@@ -1,0 +1,17 @@
+// Child class representing a Specialist
+class Specialist extends HealthProfessional {
+    private final String field;
+
+    public Specialist(int id, String name, String specialty, String field) {
+        super(id, name, specialty);
+        this.field = field;
+    }
+
+    @Override
+    public void printDetails() {
+        System.out.println("The health professional details are:");
+        System.out.println("Type: Specialist");
+        System.out.println("Field: " + field);
+        super.printDetails();
+    }
+}

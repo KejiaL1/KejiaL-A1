@@ -1,0 +1,14 @@
+// Child class representing a General Practitioner
+class GeneralPractitioner extends HealthProfessional {
+
+    public GeneralPractitioner(int id, String name, String specialty) {
+        super(id, name, specialty);
+    }
+
+    @Override
+    public void printDetails() {
+        System.out.println("The health professional details are:");
+        System.out.println("Type: General Practitioner");
+        super.printDetails();
+    }
+}

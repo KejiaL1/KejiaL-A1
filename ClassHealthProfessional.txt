@@ -1,0 +1,23 @@
+// Base class for health professionals
+class HealthProfessional {
+    protected int id;
+    protected String name;
+    protected String specialty;
+
+    // Constructor with all parameters
+    public HealthProfessional(int id, String name, String specialty) {
+        this.id = id;
+        this.name = name;
+        this.specialty = specialty;
+    }
+
+    // Method to print all instance variables
+    public void printDetails() {
+        System.out.println("ID: " + id + ", Name: " + name + ", Specialty: " + specialty);
+    }
+
+    public String getName() {
+        return name;
+    }
+}
+

@@ -1,0 +1,26 @@
+// Appointment class to accommodate appointment details
+class Appointment {
+    private final String patientName;
+    private final String mobile;
+    private final String timeSlot;
+    private final HealthProfessional professional;
+
+    // Constructor with all parameters
+    public Appointment(String patientName, String mobile, String timeSlot, HealthProfessional professional) {
+        this.patientName = patientName;
+        this.mobile = mobile;
+        this.timeSlot = timeSlot;
+        this.professional = professional;
+    }
+
+    public String getMobile() {
+        return mobile;
+    }
+
+    // Method to print all instance variables
+    public void printDetails() {
+        System.out.println("Patient: " + patientName + ", Mobile: " + mobile + ", Time Slot: " + timeSlot);
+        System.out.print("Professional: ");
+        professional.printDetails();
+    }
+}
