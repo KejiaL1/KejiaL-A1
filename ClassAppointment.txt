@@ -5,6 +5,10 @@ class Appointment {
     private final String timeSlot;
     private final HealthProfessional professional;
 
+    // Default constructor
+    public Appointment() {
+    }
+
     // Constructor with all parameters
     public Appointment(String patientName, String mobile, String timeSlot, HealthProfessional professional) {
         this.patientName = patientName;
