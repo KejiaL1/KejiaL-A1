@@ -2,6 +2,9 @@
 class Specialist extends HealthProfessional {
     private final String field;
 
+    public Specialist() {
+    }
+
     public Specialist(int id, String name, String specialty, String field) {
         super(id, name, specialty);
         this.field = field;
