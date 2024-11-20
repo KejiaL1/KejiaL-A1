@@ -1,5 +1,7 @@
 // Child class representing a General Practitioner
 class GeneralPractitioner extends HealthProfessional {
+    public GeneralPractitioner() {
+    }
 
     public GeneralPractitioner(int id, String name, String specialty) {
         super(id, name, specialty);
