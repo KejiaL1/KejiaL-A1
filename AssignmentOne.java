@@ -8,6 +8,10 @@ class HealthProfessional {
     protected String name;
     protected String specialty;
 
+    // Default constructor
+    public HealthProfessional() {
+    }
+
     // Constructor with all parameters
     public HealthProfessional(int id, String name, String specialty) {
         this.id = id;
@@ -27,6 +31,8 @@ class HealthProfessional {
 
 // Child class representing a General Practitioner
 class GeneralPractitioner extends HealthProfessional {
+    public GeneralPractitioner() {
+    }
 
     public GeneralPractitioner(int id, String name, String specialty) {
         super(id, name, specialty);
@@ -42,7 +48,10 @@ class GeneralPractitioner extends HealthProfessional {
 
 // Child class representing a Specialist
 class Specialist extends HealthProfessional {
-    private final String field;
+    private String field;
+
+    public Specialist() {
+    }
 
     public Specialist(int id, String name, String specialty, String field) {
         super(id, name, specialty);
@@ -60,10 +69,14 @@ class Specialist extends HealthProfessional {
 
 // Appointment class to accommodate appointment details
 class Appointment {
-    private final String patientName;
-    private final String mobile;
-    private final String timeSlot;
-    private final HealthProfessional professional;
+    private String patientName;
+    private String mobile;
+    private String timeSlot;
+    private HealthProfessional professional;
+
+    // Default constructor
+    public Appointment() {
+    }
 
     // Constructor with all parameters
     public Appointment(String patientName, String mobile, String timeSlot, HealthProfessional professional) {
