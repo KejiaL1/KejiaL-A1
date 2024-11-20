@@ -4,6 +4,10 @@ class HealthProfessional {
     protected String name;
     protected String specialty;
 
+    // Default constructor
+    public HealthProfessional() {
+    }
+
     // Constructor with all parameters
     public HealthProfessional(int id, String name, String specialty) {
         this.id = id;
